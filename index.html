@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bangladesh</title>
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <nav>
+    <a class="nav-left-container" href="#">
+      <img src="imgs/flag.png" alt="Flag of Bangladesh">
+      <h2>BANGLADESH</h2>
+    </a>
+
+    <!-- Nav Links -->
+    <ul class="nav-right-container">
+      <li>
+        <a href="#">
+          <img class="nav-icon" src="imgs/home-solid.svg" alt="Icon">
+          <p>Home</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="nav-icon" src="imgs/theater-masks-solid.svg" alt="Icon">
+          <p>Culture</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="nav-icon" src="imgs/hand-holding-heart-solid.svg" alt="Icon">
+          <p>Traditions</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="nav-icon" src="imgs/comments-solid.svg" alt="Icon">
+          <p>Slang</p>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img class="nav-icon" src="imgs/book-solid.svg" alt="Icon">
+          <p>Sources</p>
+        </a>
+      </li>
+      <li>
+        <button style="padding: 0 5px;" onclick="toggleDark()" href="#">
+          <img id="colorModeIcon" class="nav-icon exclude" src="imgs/moon-solid.svg" alt="Dark Mode">
+          <p id="colorModeText">Dark Mode</p>
+        </button>
+      </li>
+    </ul>
+  </nav>
+
+
+  <!-- Main Content -->
+  <main>
+    <div class="main-container">
+      <h1>Welcome to Bangladesh</h1>
+
+      <div class="slideshow-container">
+        <div class="gallery-img-container fade">
+          <img src="imgs/map.png">
+        </div>
+
+        <div class="gallery-img-container fade">
+          <img src="imgs/map-zoomed.png">
+        </div>
+
+        <div class="gallery-img-container fade">
+          <img src="imgs/district-map.jpg">
+        </div>
+
+        <div class="gallery-img-container fade">
+          <img src="imgs/victory_day.jpg">
+        </div>
+      </div>
+      <br>
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot active" onclick="showSlide(0)"></span>
+        <span class="dot" onclick="showSlide(1)"></span>
+        <span class="dot" onclick="showSlide(2)"></span>
+        <span class="dot" onclick="showSlide(3)"></span>
+      </div>
+
+      <p class="about-info">Want full citations? Just visit the
+        <i style="color: #f42a21;"><a href="#">sources</a></i> tab.</p>
+
+      <h2>History of Bangladesh</h2>
+      <div class="side-img-container">
+        <img src="imgs/map-zoomed.png" alt="Flag of Bangladesh">
+        <div class="img-caption">
+          <p>Location of Bangladesh</p>
+          <a href="#" class="img-caption-source">wikipedia.org</a>
+        </div>
+      </div>
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum dicta quasi sunt cumque molestias libero aut
+        accusamus ea similique voluptatibus, culpa ipsa quisquam delectus hic vitae ratione asperiores mollitia! Veniam?
+        Consequuntur quod natus dolor animi temporibus accusantium saepe possimus facilis, eius, non voluptatum fuga
+        harum
+        eum quos? Expedita corrupti, dolore doloribus, consectetur enim magni ea corporis laborum, ex assumenda
+        obcaecati!
+        Placeat mollitia nam itaque, optio laborum facere et corporis incidunt velit omnis modi suscipit nemo atque
+        officia explicabo nulla,Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis autem explicabo molestiae
+        voluptatibus impedit sint adipisci maxime ipsum modi corrupti dolor, animi pariatur architecto deleniti
+        doloribus
+        amet ea accusantium aliquid.Iste, culpa. Odit mollitia obcaecati commodi! Molestias eos dolorem, quidem odit
+        laboriosam consequatur modi! Itaque deleniti error dolore, voluptatibus ratione dolorum dolor iure repellendus
+        assumenda tenetur iste, officiis earum accusamus. harum, maxime praesentium? Illo neque eos itaque vero,
+        voluptate
+        iusto porro.</p>
+
+      <div class="wide-img-container">
+        <img src="imgs/victory_day.jpg" alt="Victory Day Celebration">
+        <div class="img-caption">
+          <p>Victory Day celebration</p>
+          <a class="img-caption-source" href="#">dhakatribune.com</a>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <h4>Last updated 2020-05-16</h4>
+      <h2 class="author-header">Authors:</h2>
+      <ul class="author-list">
+        <li>Joel Diberius</li>
+        <li class="vertical-bar"></li>
+        <li>Linus Dinesjö</li>
+        <li class="vertical-bar"></li>
+        <li>Alexander Nashed</li>
+      </ul>
+    </footer>
+    <div class="empty"></div>
+  </main>
+  <script src="js/app.js"></script>
+</body>
+
+</html>
