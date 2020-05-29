@@ -42,7 +42,7 @@ main,
   color: #eeeeee;
 }
 .dark-mode-border {
-  border-color: #ffffff;
+  border-color: #ff0000;
 }
 .nav-right-container li:last-child:hover .nav-icon {
   /* Colour mode button */
@@ -61,7 +61,7 @@ main * {
 main {
   font-family: "Open Sans", sans-serif;
   color: #000000;
-  margin: 15px auto 16px;
+  margin: 6px auto 16px;
   width: 1000px;
   background-color: #eeeeee;
   min-height: 95vh;
@@ -84,7 +84,7 @@ main {
   margin: 0 auto;
   box-sizing: content-box;
   width: 85%;
-  padding-top: 55%; /* Aspect ratio */
+  padding-top: 55%; /* Consistent aspect ratio */
   position: relative;
 }
 .gallery-img-container img {
@@ -115,8 +115,10 @@ main {
     opacity: 1;
     transform: scale(1);
   }
+  15% {
+    transform: scale(1.02);
+  }
   25% {
-    transform: scale(1.04);
     border-radius: 4%;
     opacity: 0.85;
   }
@@ -131,7 +133,7 @@ main {
 }
 .animated {
   animation-name: img-animation;
-  animation-duration: 0.7s;
+  animation-duration: 0.5s;
   animation-timing-function: ease;
 }
 
