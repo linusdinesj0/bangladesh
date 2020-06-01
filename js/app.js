@@ -19,6 +19,7 @@ function toggleDark() {
     document.getElementsByClassName("wide-img-container")[0],
     document.getElementsByClassName("author-list")[0],
   ];
+  console.log(bordersElements)
 
   // Toggles class of 'dark-mode' for main container
   main.classList.toggle("dark-mode");
