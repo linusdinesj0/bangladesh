@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
 
 * {
   margin: 0;
@@ -86,15 +87,18 @@ main {
   width: 85%;
   padding-top: 55%; /* Consistent aspect ratio */
   position: relative;
+  overflow: hidden;
 }
-.gallery-img-container img {
+.gallery-img {
   position: absolute;
   top: 0;
   border-radius: 1%;
-  border-top: #666666 solid 2px;
-  border-bottom: #666666 solid 2px;
   width: 100%;
   height: 100%;
+  transition: transform 150ms ease;
+}
+.gallery-img:hover {
+  transform: scale(1.05);
 }
 .dot {
   cursor: pointer;
@@ -157,10 +161,11 @@ main h1 {
   margin-bottom: 14px;
   border-left: #326a4e solid 12px;
   border-top-left-radius: 3px;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 main h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-family: "Arvo";
 }
 main h4 {
   font-size: 1.5rem;
