@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,400&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
-@import url('https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&display=swap");
 
 * {
   margin: 0;
@@ -53,7 +53,7 @@ main,
 body {
   background-image: url("../imgs/cover.jpg");
   background-size: cover;
-  background-color: #222222; /* Fallback colour */
+  background-color: #222222; /* Fallback background if image fails to load*/
 }
 
 main * {
@@ -166,11 +166,27 @@ main h1 {
 main h2 {
   font-size: 2.5rem;
   font-family: "Arvo";
+  margin-bottom: 1rem;
 }
 main h4 {
   font-size: 1.5rem;
   margin-top: 2rem;
   margin-bottom: 16px;
+}
+main sup {
+  /* Prevents superscripts from exceeding the line-height */
+  vertical-align: baseline;
+  position: relative;
+  top: -0.4em;
+}
+.main-container ul {
+  margin-left: 5%;
+  margin-bottom: 1rem;
+}
+.main-container li {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  list-style-type: circle;
 }
 
 .wide-img-container {
@@ -271,12 +287,12 @@ footer h4 {
     width: calc(100% - 110px);
   }
   main h1 {
-    font-size: 28px;
+    font-size: 2rem;
     border-left: none;
     border-bottom-color: #326a4e;
   }
   main h2 {
-    font-size: 20px;
+    font-size: 2rem;
   }
 }
 @media only screen and (max-width: 650px) {
