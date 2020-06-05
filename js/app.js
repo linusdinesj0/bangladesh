@@ -1,4 +1,4 @@
-// Bool be toggeled in toggleDark()
+// Boolean to be toggeled in toggleDark()
 var darkMode = false;
 
 function toggleDark() {
@@ -14,12 +14,9 @@ function toggleDark() {
   const colorModeIcon = document.getElementById("colorModeIcon");
 
   // Elements with border-colours
-  const bordersElements = [
-    document.getElementsByClassName("side-img-container")[0],
-    document.getElementsByClassName("wide-img-container")[0],
-    document.getElementsByClassName("author-list")[0],
-  ];
-  console.log(bordersElements)
+  const authorList = document.getElementsByClassName("author-list")[0];
+  const sideImgContainer = document.getElementsByClassName("side-img-container")[0];
+  const wideImgContainer = document.getElementsByClassName("wide-img-container")[0];
 
   // Toggles class of 'dark-mode' for main container
   main.classList.toggle("dark-mode");
@@ -30,9 +27,18 @@ function toggleDark() {
     colorModeIcon.src = "imgs/sun-solid.svg";
 
     // Border colours
-    bordersElements.forEach(element => {
-      element.style.borderColor = "#ffffff";
-    });
+    if (typeof authorList !== "undefined") {
+      /* Ensure that element exists before styling, avoid errors
+      One page does not contain a wide image container */
+      authorList.style.borderColor = "#ffffff";
+    }
+    if (typeof sideImgContainer !== "undefined") {
+      sideImgContainer.style.borderColor = "#ffffff";
+    }
+    if (typeof wideImgContainer !== "undefined") {
+
+      wideImgContainer.style.borderColor = "#ffffff";
+    }
 
     footer.style.backgroundColor = "#111111";
     body.style.backgroundImage = 'url("imgs/cover-dim.jpg")';
@@ -45,9 +51,15 @@ function toggleDark() {
     colorModeIcon.src = "imgs/moon-solid.svg";
 
     // Border colours
-    bordersElements.forEach(element => {
-      element.style.borderColor = "#000000";
-    });
+    if (typeof authorList !== "undefined") {
+      authorList.style.borderColor = "#000000";
+    }
+    if (typeof sideImgContainer !== "undefined") {
+      sideImgContainer.style.borderColor = "#000000";
+    }
+    if (typeof wideImgContainer !== "undefined") {
+      wideImgContainer.style.borderColor = "#000000";
+    }
 
     footer.style.backgroundColor = "#d8d8d8";
     body.style.backgroundImage = 'url("imgs/cover.jpg")';
